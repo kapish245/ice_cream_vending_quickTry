@@ -5,7 +5,7 @@ let stocks = {
     toppings : ["chocolate", "peanuts"],
  };
 
- let is_shop_open=false;
+ let is_shop_open=true;
 
  let order = (time,work)=>{ 
      return new Promise((resolve,reject)=>{
@@ -59,3 +59,4 @@ let stocks = {
     })
 })  
 .catch(()=>console.log('customer left'))
+.finally(()=>console.log('shop closing time is 10:00 pm '))
