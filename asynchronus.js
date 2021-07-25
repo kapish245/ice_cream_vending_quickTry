@@ -5,7 +5,7 @@ let stocks = {
     toppings : ["chocolate", "peanuts"],
  };
 
- let is_shop_open=true;
+ let is_shop_open=false;
 
  let order = (time,work)=>{ 
      return new Promise((resolve,reject)=>{
@@ -58,3 +58,4 @@ let stocks = {
         console.log('ice cream served');
     })
 })  
+.catch(()=>console.log('customer left'))
